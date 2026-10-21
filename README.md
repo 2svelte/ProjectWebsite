@@ -1,5 +1,5 @@
 # ProjectWebsite
-
+A website for me to post demos and deployed projects of mine, for networking purposes.
 Turborepo (npm workspaces) for my personal project showcase site. Responsive on mobile and desktop.
 
 - `apps/web` – Next.js site (home page + project pages)
