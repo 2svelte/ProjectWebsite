@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { projects } from "./projects-data";
-
+import { profileImage, projects } from "./projects-data";
+import { ImageSlot } from "./image-slot";
 
 export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="placeholder hero-image bite">Your image here</div>
+        <ImageSlot src={profileImage} alt="Nadia" className="hero-image" placeholder="Your image here" />
         <div>
           <h1>Hi, I&apos;m Nadia</h1>
           <p>
@@ -23,7 +23,7 @@ export default function Home() {
       <div className="highlights">
         {projects.map((p) => (
           <article key={p.title} className="highlight bite">
-            <div className="placeholder project-image bite">Project image here</div>
+            <ImageSlot src={p.image} alt={p.title} className="project-image" placeholder="Project image here" />
             <div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>

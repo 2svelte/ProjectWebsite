@@ -54,6 +54,9 @@ nav a:hover { color: var(--accent); }
   letter-spacing: 0.1em;
 }
 
+.image-slot { position: relative; background: #1c1c21; }
+.image-slot img { object-fit: cover; }
+
 .hero { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
 .hero-image { aspect-ratio: 1; width: 100%; max-width: 260px; --bite: 30px; }
 @media (min-width: 700px) { .hero { grid-template-columns: 260px 1fr; } }
@@ -72,8 +75,8 @@ nav a:hover { color: var(--accent); }
 @media (min-width: 700px) { .highlight { grid-template-columns: 1fr 1.5fr; } }
 .highlight a {
   display: inline-block;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--accent);
+  color: var(--paper);
   border-radius: 999px;
   padding: 0.35rem 1.1rem;
   font-family: var(--font-mono), monospace;
@@ -81,7 +84,7 @@ nav a:hover { color: var(--accent); }
   text-transform: uppercase;
   text-decoration: none;
 }
-.highlight a:hover { background: var(--accent); color: var(--paper); }
+.highlight a:hover { background: var(--paper); color: var(--ink); }
 
 .skills { list-style: none; padding: 0; margin: 0 0 1.25rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .skills li {

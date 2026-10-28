@@ -1,14 +1,19 @@
 export type Project = {
   title: string;
   slug: string;
+  image?: string;
   desc: string;
   skills?: string[];
 };
+
+// Set to a path like "/images/nadia.jpg" (file in apps/web/public/images)
+export const profileImage: string | undefined = "/images/1000044242.png";;
 
 export const projects: Project[] = [
   {
     title: "Freight Reconciliation",
     slug: "freight-reconciliation",
+    image: "/images/freight.png",
     desc: "An automated audit engine that cross checks carrier invoices, contract rates, and GPS telematics to stop billing leakage. It flags overcharges and auto-generates clause-backed dispute memos you can review and dispatch with a single click via an integrated email pipeline, without ever touching Outlook.",
     skills: [
       "AI & LLM Integration (OpenAI)",
@@ -28,6 +33,7 @@ export const projects: Project[] = [
   {
     title: "Retail Demand Planning and S&OP Copilot",
     slug: "retail-demand-planning-sop-copilot",
+    // image: "/images/retail.png",
     desc: "A retail demand planning copilot that turns messy POS scanner data into 12-week forecasts, simulates stockout risks, and uses AI to automate monthly S&OP briefs. Provides an intuitive workbench to run scenario simulations, track SKU health, and audit forecast accuracy metrics (MAPE, bias) without building complex spreadsheets from scratch.",
     skills: [
       "Predictive Time-Series Forecasting",
