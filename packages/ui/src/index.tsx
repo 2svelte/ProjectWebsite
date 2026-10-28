@@ -16,15 +16,8 @@ export function Card({
   children: ReactNode;
 }) {
   return (
-    <section
-      style={{
-        border: "1px solid #e2e2e2",
-        borderRadius: 8,
-        padding: "1rem 1.25rem",
-        background: "#fff",
-      }}
-    >
-      <h3 style={{ marginTop: 0 }}>{title}</h3>
+    <section className="card bite">
+      <h3>{title}</h3>
       {children}
     </section>
   );
