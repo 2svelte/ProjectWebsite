@@ -13,7 +13,13 @@ export default function Projects() {
             <div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
-              <Link href={`/projects/${p.slug}`}>View project</Link>
+              <Link
+                href={`/projects/${p.slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View project
+              </Link>
             </div>
           </article>
         ))}

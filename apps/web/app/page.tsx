@@ -10,7 +10,7 @@ export default function Home() {
         <div>
           <h1>Hi, I&apos;m Nadia</h1>
           <p>
-            I&apos;m a business analyst, AI developer, and automations expert.
+            I&apos;m a business analyst, AI developer, and automations enthusiast.
             I just love to innovate. This is a showcase for some of my
             favourite builds.
           </p>
@@ -33,7 +33,13 @@ export default function Home() {
                   ))}
                 </ul>
               )}
-              <Link href={p.externalUrl ?? `/projects/${p.slug}`}>View project</Link>
+              <Link
+                href={p.externalUrl ?? `/projects/${p.slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View project
+              </Link>
             </div>
           </article>
         ))}

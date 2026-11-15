@@ -23,7 +23,6 @@ export const projects: Project[] = [
       "Automated KPI Alerting (Power Automate)",
       "Python & Pandas",
       "Workflow Automation",
-      "Dynamic Measure Branching (DAX)",
       "Root-Cause Variance Analysis",
       "Automated Exception Alerting",
       "Margin Protection",
