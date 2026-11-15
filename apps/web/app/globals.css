@@ -71,8 +71,6 @@ nav a:hover { color: var(--accent); }
   padding: 1.5rem;
 }
 .highlight { display: grid; grid-template-columns: 1fr; gap: 1.5rem; --bite: 30px; }
-.project-image { min-height: 200px; --bite: 18px; }
-@media (min-width: 700px) { .highlight { grid-template-columns: 1fr 1.5fr; } }
 .highlight a {
   display: inline-block;
   background: var(--accent);

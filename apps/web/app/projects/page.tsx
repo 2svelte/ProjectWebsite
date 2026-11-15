@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { projects } from "../projects-data";
-import { ImageSlot } from "../image-slot";
 
 export const metadata = { title: "All Projects" };
 
@@ -11,7 +10,6 @@ export default function Projects() {
       <div className="highlights">
         {projects.map((p) => (
           <article key={p.title} className="highlight bite">
-            <ImageSlot src={p.image} alt={p.title} className="project-image" placeholder="Project image here" />
             <div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>

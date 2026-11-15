@@ -23,7 +23,6 @@ export default function Home() {
       <div className="highlights">
         {projects.map((p) => (
           <article key={p.title} className="highlight bite">
-            <ImageSlot src={p.image} alt={p.title} className="project-image" placeholder="Project image here" />
             <div>
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
@@ -34,7 +33,7 @@ export default function Home() {
                   ))}
                 </ul>
               )}
-              <Link href={`/projects/${p.slug}`}>View project</Link>
+              <Link href={p.externalUrl ?? `/projects/${p.slug}`}>View project</Link>
             </div>
           </article>
         ))}
